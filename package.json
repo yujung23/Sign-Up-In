@@ -3,15 +3,31 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "nodejs ./bin/www"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "express": "~4.0.0",
+    "express-session": "^1.17.0",
+    "bcrypt-nodejs": "0.0.3",
+    "mysql": "^2.17.1",
+    "ejs": "^2.7.1",
     "static-favicon": "~1.0.0",
     "morgan": "~1.0.0",
     "cookie-parser": "~1.0.1",
     "body-parser": "~1.0.0",
     "debug": "~0.7.4",
-    "jade": "~1.3.0"
-  }
+  },
+  "description": "회원가입시 bcrypt-nodejs로 비밀번호를 암호화 한뒤 ID, PASSWORD를 DB에 저장한 뒤 그 정보를 토대로",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hyun-Geol/Sign-Up-In.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hyun-Geol/Sign-Up-In/issues"
+  },
+  "homepage": "https://github.com/Hyun-Geol/Sign-Up-In#readme"
 }
