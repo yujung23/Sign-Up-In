@@ -1,6 +1,6 @@
-CREATE DATABASE expressql;
+CREATE DATABASE signUpIn;
 
-USE expressql;
+USE signUpIn;
 
 CREATE TABLE `user_info` (
     `num` int(11) NOT NULL AUTO_INCREMENT,

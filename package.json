@@ -1,33 +1,21 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
+  "name": "wallet",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "auto": "supervisor ./bin/www"
   },
   "dependencies": {
-    "express": "~4.0.0",
-    "express-session": "^1.17.0",
     "bcrypt-nodejs": "0.0.3",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "^2.7.4",
+    "express": "~4.16.1",
+    "express-session": "^1.17.0",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
     "mysql": "^2.17.1",
-    "ejs": "^2.7.1",
-    "static-favicon": "~1.0.0",
-    "morgan": "~1.0.0",
-    "cookie-parser": "~1.0.1",
-    "body-parser": "~1.0.0",
-    "debug": "~0.7.4",
-  },
-  "description": "회원가입시 bcrypt-nodejs로 비밀번호를 암호화 한뒤 ID, PASSWORD를 DB에 저장한 뒤 그 정보를 토대로",
-  "main": "app.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Hyun-Geol/Sign-Up-In.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Hyun-Geol/Sign-Up-In/issues"
-  },
-  "homepage": "https://github.com/Hyun-Geol/Sign-Up-In#readme"
+    "static-favicon": "^2.0.0-alpha"
+  }
 }
