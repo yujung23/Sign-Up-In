@@ -5,7 +5,7 @@ const info = {
     user: 'root',
     password: 'qwer1234!',
     port:  3306 ,
-    database: 'expressmysql'
+    database: 'signUpIn'
 }
 
 let mysql = mySql.createConnection(info)
